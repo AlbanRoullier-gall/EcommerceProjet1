@@ -1,0 +1,279 @@
+/*GLOBAL FORMATTING-------------------------------------------------------------------*/
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  font-family: Gurmukhi MT;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: #13686a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER ----------------------------------------------------------------------------*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid black;
+}
+
+.container-menu {
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+
+.container-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.container-menu .container-brand .title {
+  font-size: 2.8rem;
+  font-weight: lighter;
+  line-height: 1rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  line-height: 1rem;
+}
+
+.menu li a {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-right: 0.1rem solid black;
+}
+
+.menu li a:hover {
+  background-color: #d9b970;
+  transition-duration: 300ms;
+}
+
+.readme {
+  height: 3rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.readme:hover {
+  background-color: #d9b970;
+  transition-duration: 300ms;
+}
+
+.container-services ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+  margin-right: 5rem;
+}
+
+.container-services i {
+  font-size: 3rem;
+  padding-right: 2rem;
+}
+
+.container-services i:hover {
+  transform: scale(1.5);
+  transition-duration: 300ms;
+}
+
+/*SECTION AUTHENTIFICATION----------------------------------------------------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form .container {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+form .container input {
+  height: 2rem;
+  width: 30rem;
+}
+
+form .container input[type="submit"] {
+  width: 20rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  border: 0.1rem solid black;
+  background-color: #d9b970;
+  cursor: pointer;
+}
+
+.inscription-button {
+  margin-top: 2rem;
+}
+
+.inscription-button a button {
+  width: 20rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  border: 0.1rem solid black;
+  background-color: #d9b970;
+  cursor: pointer;
+}
+
+/*SECTION FOOTER----------------------------------------------------------------------*/
+
+footer {
+  border-top: 0.5rem solid black;
+  margin-top: 5rem;
+  font-size: 5rem;
+}
+
+footer .social-network-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .textuel {
+  margin-top: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 0%;
+}
+
+/* RESPONSIVITY -------------------------------------------------------------------------*/
+
+@media all and (max-width: 480px) {
+  /* HEADER --------------------------------------------------------------------------*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid black;
+  }
+
+  .container-brand {
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+  }
+
+  .container-menu .container-brand .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+
+  /*SECTION AUTHENTIFICATION----------------------------------------------------------*/
+
+  .inscription-button {
+    text-align: center;
+  }
+
+  /*SECTION FOOTER--------------------------------------------------------------------*/
+
+  footer .textuel {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+  }
+}
+@media (min-width: 480px) and (max-width: 780px) {
+  /* HEADER --------------------------------------------------------------------------*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid black;
+  }
+
+  .container-brand {
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+  }
+
+  .container-menu .container-brand .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+
+  /*SECTION FOOTER--------------------------------------------------------------------*/
+
+  footer .textuel {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+  }
+}
+@media (min-width: 781px) and (max-width: 979px) {
+}

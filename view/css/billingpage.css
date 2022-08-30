@@ -1,0 +1,752 @@
+/*GLOBAL FORMATTING-------------------------------------------------------------------*/
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  font-family: Gurmukhi MT;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: #13686a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER ----------------------------------------------------------------------------*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid black;
+}
+
+.container-menu {
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+
+.container-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.container-menu .container-brand .title {
+  font-size: 2.8rem;
+  font-weight: lighter;
+  line-height: 1rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  line-height: 1rem;
+}
+
+.menu li a {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-right: 0.1rem solid black;
+}
+
+.menu li a:hover {
+  background-color: #d9b970;
+  transition-duration: 300ms;
+}
+
+.readme {
+  height: 3rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.readme:hover {
+  background-color: #d9b970;
+  transition-duration: 300ms;
+}
+
+.container-services ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+  margin-right: 5rem;
+}
+
+.container-services i {
+  font-size: 3rem;
+  padding-right: 2rem;
+  transform: scale(1);
+}
+
+.container-services i:hover {
+  transform: scale(1.5);
+  transition-duration: 300ms;
+}
+
+.container-services img {
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  border-radius: 100%;
+}
+
+/* TITLE -----------------------------------------------------------------------------*/
+
+.title h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+/* ORDER ------------------------------------------------------------------------------*/
+
+.order {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+}
+
+/* ORDER ------------------------------------------------------------------------------*/
+/* PERSONNAL-CONTACT-DETAILS ----------------------------------------------------------*/
+
+.personnal-contact-details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.personnal-contact-details h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.personnal-contact-details input[type="text"] {
+  width: 25rem;
+}
+
+.personnal-contact-details input[type="email"] {
+  width: 25rem;
+}
+
+.personnal-contact-details label {
+  margin-top: 2.5rem;
+}
+
+.personnal-contact-details .container-radio {
+  margin-top: 2rem;
+}
+
+.personnal-contact-details .name-firstname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personnal-contact-details .name-firstname .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.personnal-contact-details .city-encoding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personnal-contact-details .city-encoding .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.personnal-contact-details .phone-country-encoding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personnal-contact-details .phone-country-encoding .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.personnal-contact-details .inscription {
+  width: 20rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  border: 0.1rem solid black;
+  background-color: #d9b970;
+}
+
+/* ORDER ------------------------------------------------------------------------------*/
+/* SHIPPING-PAYMENT -------------------------------------------------------------------*/
+
+.shipping-payment {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shipping {
+  display: flex;
+  flex-direction: row;
+}
+
+.shipping-payment h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.shipping .container-shipping {
+  height: 20rem;
+  width: 20rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.shipping .container-shipping img {
+  height: 15rem;
+  width: 20rem;
+}
+
+.shipping .container-shipping label {
+  padding-top: 0rem;
+}
+
+/* ORDER ------------------------------------------------------------------------------*/
+/* PAYMENT ----------------------------------------------------------------------------*/
+
+.payment img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.payment .container-payment {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.payment .container-payment .pictures-cards-container {
+  margin-top: 2rem;
+}
+
+/* ORDER-REVIEW-----------------------------------------------------------------------*/
+
+.order-review h3 {
+  border-top: 0.3rem solid black;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.order-review-box {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+}
+
+/* ORDER-REVIEW-----------------------------------------------------------------------*/
+/* PRODUCT-DESCRIPTION----------------------------------------------------------------*/
+
+.product-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.product-description .container li {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+/* ORDER-REVIEW-----------------------------------------------------------------------*/
+/* PRODUCT-PRICE----------------------------------------------------------------------*/
+
+.price {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.price .container-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  border-bottom: 0.1rem solid black;
+}
+
+/* CONDITIONS-------------------------------------------------------------------------*/
+
+.conditions {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* TO-ORDER --------------------------------------------------------------------------*/
+
+.to-order {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.to-order button {
+  width: 20rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  border: 0.1rem solid black;
+  background-color: #d9b970;
+  margin-bottom: 2rem;
+}
+
+/*SECTION FOOTER----------------------------------------------------------------------*/
+
+footer {
+  border-top: 0.5rem solid black;
+  margin-top: 5rem;
+  font-size: 5rem;
+}
+
+footer .social-network-logos {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-network-logos a {
+  transform: scale(1);
+}
+
+footer .social-network-logos a:hover {
+  transform: scale(1.5);
+  transition-duration: 300ms;
+}
+
+footer .textuel {
+  margin-top: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 0%;
+  padding-bottom: 2rem;
+}
+
+/* RESPONSIVITY -------------------------------------------------------------------------*/
+
+@media all and (max-width: 480px) {
+  /* HEADER --------------------------------------------------------------------------*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid black;
+  }
+
+  .container-brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-menu .container-brand .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+
+  /* ORDER ------------------------------------------------------------------------------*/
+
+  .order {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  /* ORDER ------------------------------------------------------------------------------*/
+  /* PERSONNAL-CONTACT-DETAILS ----------------------------------------------------------*/
+
+  .personnal-contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .personnal-contact-details .name-firstname {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personnal-contact-details .city-encoding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personnal-contact-details .phone-country-encoding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* ORDER ------------------------------------------------------------------------------*/
+  /* SHIPPING-PAYMENT -------------------------------------------------------------------*/
+
+  .shipping-payment {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shipping-payment h3 {
+    border-top: 0.1rem solid black;
+    padding-top: 3rem;
+  }
+
+  .shipping {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ORDER-REVIEW-----------------------------------------------------------------------*/
+
+  .order-review-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  /* ORDER-REVIEW-----------------------------------------------------------------------*/
+  /* PRODUCT-DESCRIPTION----------------------------------------------------------------*/
+
+  .product-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-description .container {
+    padding-right: 1rem;
+    line-height: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  /* ORDER-REVIEW-----------------------------------------------------------------------*/
+  /* PRODUCT-PRICE----------------------------------------------------------------------*/
+
+  .price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price .container-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid black;
+  }
+
+  /*SECTION FOOTER--------------------------------------------------------------------*/
+
+  footer .textuel {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+  }
+}
+@media (min-width: 480px) and (max-width: 780px) {
+  /* HEADER --------------------------------------------------------------------------*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid black;
+  }
+
+  .container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-menu .container-brand .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+
+  /* ORDER ------------------------------------------------------------------------------*/
+
+  .order {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .personnal-contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .personnal-contact-details .name-firstname {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personnal-contact-details .city-encoding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personnal-contact-details .phone-country-encoding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* ORDER ------------------------------------------------------------------------------*/
+  /* SHIPPING-PAYMENT -------------------------------------------------------------------*/
+
+  .shipping-payment {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shipping-payment h3 {
+    border-top: 0.1rem solid black;
+    padding-top: 3rem;
+  }
+
+  .shipping {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ORDER-REVIEW-----------------------------------------------------------------------*/
+
+  .order-review-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  /* ORDER-REVIEW-----------------------------------------------------------------------*/
+  /* PRODUCT-DESCRIPTION----------------------------------------------------------------*/
+
+  .product-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  /*SECTION FOOTER--------------------------------------------------------------------*/
+
+  footer .textuel {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+  }
+}
+@media (min-width: 781px) and (max-width: 979px) {
+  /* HEADER --------------------------------------------------------------------------*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid black;
+  }
+
+  .container-brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-menu .container-brand .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+
+  /* ORDER ------------------------------------------------------------------------------*/
+
+  .order {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .personnal-contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .personnal-contact-details .name-firstname {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personnal-contact-details .city-encoding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personnal-contact-details .phone-country-encoding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* ORDER ------------------------------------------------------------------------------*/
+  /* SHIPPING-PAYMENT -------------------------------------------------------------------*/
+
+  .shipping-payment {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shipping-payment h3 {
+    border-top: 0.1rem solid black;
+    padding-top: 3rem;
+  }
+
+  .shipping {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ORDER-REVIEW-----------------------------------------------------------------------*/
+
+  .order-review-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  /* ORDER-REVIEW-----------------------------------------------------------------------*/
+  /* PRODUCT-DESCRIPTION----------------------------------------------------------------*/
+
+  .product-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  /*SECTION FOOTER--------------------------------------------------------------------*/
+
+  footer .textuel {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+  }
+}

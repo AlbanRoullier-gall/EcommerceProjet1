@@ -1,0 +1,505 @@
+/*GLOBAL FORMATTING-------------------------------------------------------------------*/
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  font-family: Gurmukhi MT;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: #13686a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER ----------------------------------------------------------------------------*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid black;
+}
+
+.container-menu {
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+
+.container-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.container-menu .container-brand .title {
+  font-size: 2.8rem;
+  font-weight: lighter;
+  line-height: 1rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  line-height: 1rem;
+}
+
+.menu li a {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-right: 0.1rem solid black;
+}
+
+.menu li a:hover {
+  background-color: #d9b970;
+  transition-duration: 300ms;
+}
+
+.readme {
+  height: 3rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.readme:hover {
+  background-color: #d9b970;
+  transition-duration: 300ms;
+}
+
+.container-services ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+  margin-right: 5rem;
+}
+
+.container-services i {
+  font-size: 3rem;
+  padding-right: 2rem;
+  transform: scale(1);
+}
+
+.container-services i:hover {
+  transform: scale(1.5);
+  transition-duration: 300ms;
+}
+
+.container-services img {
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  border-radius: 100%;
+}
+
+#taille-panier {
+  font-size: large;
+}
+
+/*SECTION SPONSOR---------------------------------------------------------------------*/
+#sponsor {
+  background-color: #0dd3d1;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#sponsor img {
+  background-size: cover;
+  width: 20rem;
+  height: 10rem;
+  align-self: center;
+}
+
+/*SECTION PHILOSOPHY------------------------------------------------------------------*/
+
+#philosophy {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+/*SECTION CARROUSSEL------------------------------------------------------------------*/
+
+.carroussel {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.carrousselpictures {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  padding-left: 0%;
+}
+
+.carrousselpictures li img {
+  background-size: cover;
+  width: 300px;
+  height: 250px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/*SECTION CATEGORY--------------------------------------------------------------------*/
+/*BUTTON------------------------------------------------------------------------------*/
+#category {
+  position: relative;
+  height: 5rem;
+  margin-top: 3rem;
+}
+
+#category .category-btn .btn {
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 3rem;
+  border-bottom: 0.1rem solid black;
+  padding-top: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#category .category-btn .btn:hover {
+  background-color: #d9b970;
+}
+
+.stone-type {
+  display: none;
+}
+
+#category #toggle:checked + .stone-type {
+  display: block;
+  font-size: 1.5rem;
+  background-color: #d9b970;
+  position: absolute;
+  z-index: 2;
+}
+
+.stone-type label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*SECTION CATEGORY-------------------------------------------------------------*/
+/*CHECKBOX CUSTOM--------------------------------------------------------------*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  border: 0.5rem solid black;
+  border-radius: 100%;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: black;
+  border: 0.5rem solid black;
+}
+
+label {
+  font-weight: bolder;
+}
+
+/*SECTION SEARCHBAR--------------------------------------------------------------------*/
+/*BUTTON------------------------------------------------------------------------------*/
+
+#searchBar {
+  position: relative;
+  height: 5rem;
+}
+
+#searchBar .searchBar-btn .btn {
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 3rem;
+  border-bottom: 0.1rem solid black;
+  padding-top: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#searchBar .searchBar-btn .btn:hover {
+  background-color: #d9b970;
+}
+
+/*SECTION SEARCHBAR-------------------------------------------------------------*/
+/*TEXT CUSTOM--------------------------------------------------------------*/
+
+.container-text input[type="submit"] {
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 1.5rem;
+  padding-bottom: 2rem;
+  border: solid #13686a 1rem;
+  text-align: center;
+  background-color: #13686a;
+  cursor: pointer;
+}
+
+.container-text input[type="submit"]:hover {
+  background-color: #d9b970;
+  text-decoration: underline;
+}
+
+.container-text {
+  display: none;
+}
+
+.searchBar-btn input[type="checkbox"]:checked ~ .container-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+/*SECTION CATALOG---------------------------------------------------------------------*/
+/*POSITIONING-------------------------------------------------------------------------*/
+
+.stone-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stone-description img {
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.stone-description img:hover {
+  transform: scale(1.1);
+  transition-duration: 400ms;
+}
+
+.text-description {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.text-description .text {
+  line-height: 0%;
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+.text-description i {
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+.text-description i {
+  cursor: pointer;
+  transition: transform;
+}
+
+.text-description i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 400ms;
+}
+
+/*SECTION CATALOG---------------------------------------------------------------------*/
+/*CHECKBOX CUSTOM---------------------------------------------------------------------*/
+
+.favorite input[type="checkbox"],
+.favorite .checked {
+  display: none;
+}
+
+.favorite input[type="checkbox"]:checked ~ .checked {
+  display: inline-block;
+  color: red;
+  transform: scale(1.2);
+}
+.favorite input[type="checkbox"]:checked ~ .unchecked {
+  display: none;
+}
+
+/*SECTION FOOTER----------------------------------------------------------------------*/
+
+footer {
+  border-top: 0.5rem solid black;
+  margin-top: 5rem;
+  font-size: 5rem;
+}
+
+footer .social-network-logos {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-network-logos a {
+  transform: scale(1);
+}
+
+footer .social-network-logos a:hover {
+  transform: scale(1.5);
+  transition-duration: 300ms;
+}
+
+footer .textuel {
+  margin-top: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 0%;
+  padding-bottom: 2rem;
+}
+
+/* RESPONSIVITY -------------------------------------------------------------------------*/
+
+@media all and (max-width: 480px) {
+  /* HEADER --------------------------------------------------------------------------*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid black;
+  }
+
+  .container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-menu .container-brand .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+
+  /*SECTION CATALOG-------------------------------------------------------------------*/
+
+  .stone-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*SECTION FOOTER--------------------------------------------------------------------*/
+
+  footer .textuel {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+  }
+}
+@media (min-width: 480px) and (max-width: 780px) {
+  /* HEADER --------------------------------------------------------------------------*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.5rem solid black;
+  }
+
+  .container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-menu .container-brand .title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-services ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+
+  /*SECTION CATALOG-------------------------------------------------------------------*/
+
+  .stone-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*SECTION FOOTER--------------------------------------------------------------------*/
+
+  footer .textuel {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+  }
+}
+@media (min-width: 781px) and (max-width: 979px) {
+}

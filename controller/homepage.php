@@ -5,13 +5,12 @@ require('libraries/JSON/sponsor.php');
 require('libraries/XML/currency.php');
 
 function homepage() {
-
   $products = (new CatalogProducts)::$poductsArray;
   $categories = (new CatalogCategories)::$categoriesArray;
   $projects = (new CatalogProjects)::$projectsArray;
 
-  if(isset($_SESSION['LOGGED_USER_PICTURE'])){
-    $profilpicture=$_SESSION['LOGGED_USER_PICTURE'];
+  if(isset($_SESSION['LOGGED_USER'])){
+    $profilpicture= unserialize($_SESSION['LOGGED_USER'])->link_image_profil_user;
   }
 
   require("view/homepageview.php");
@@ -23,8 +22,8 @@ function homepage_product_searched($input_search){
   $projects = (new CatalogProjects)::$projectsArray;
   
 
-  if(isset($_SESSION['LOGGED_USER_PICTURE'])){
-      $profilpicture=$_SESSION['LOGGED_USER_PICTURE'];
+  if(isset($_SESSION['LOGGED_USER'])){
+    $profilpicture= unserialize($_SESSION['LOGGED_USER'])->link_image_profil_user;
   }
     
 

@@ -320,56 +320,25 @@ class CatalogUsers extends CatalogRepository{
         return $users;
         }
     
-    public function select_user($user_email_selected){
+    public function check_user_in_catalog(String $email, String $password){
         $users = self::get_users();
         $userChecked  =  array();
         foreach ($users as $user)
             {
-                if ($user->email_user === $user_email_selected ){
-                    $userChecked['name_user'] = $user->name_user;
-                    $userChecked['firstname_user'] =  $user->firstname_user;
-                    $userChecked['email_user'] = $user->email_user;
-                    $userChecked['postal_code_user'] =  $user->postal_code_user;
-                    $userChecked['city_user'] =  $user->city_user;
-                    $userChecked['phone_number_user'] = $user->phone_number_user;
-                    $userChecked['birthday_user'] = $user->birthday_user;
-                    $userChecked['password_user'] =$user->password_user;
-                    $userChecked['image_profil_user'] =  $user->link_image_profil_user;
-                    $userChecked['name_country'] = $user->country_user;
-                    $userChecked['address_user'] = $user->address_user;
+                if ($user->email_user === $email &&  $user->password_user === $password){
+                    $userChecked = $user;
                 }
         } 
         if (empty($userChecked)){
-            throw new Exception("l'email de l'utilisateur n'a pas été bien renseigné ou n'existe pas");
+            throw new Exception(sprintf('Les informations envoyées ne permettent pas de vous identifier : (%s/%s)',$email,$password));
         }
         return $userChecked;
     }
 }
 
-class Authentication{
-    private static Array $usersCatalog;
-    public static bool $userValid;  
-
-    public function __construct(String $email, String $password) {
-        self::$usersCatalog = (new CatalogUsers())::$usersArray;
-        self::$userValid = self::check_user_valid($email, $password);
-    }
-
-    private static function check_user_valid(String $email, String $password)
-    {
-        $users = self::$usersCatalog;
-        $userValid;
-        foreach ($users as $user){
-            if ($user->email_user === $email &&  $user->password_user === $password)
-            {
-                $userValid = TRUE;
-            }
-        }
-        return $userValid;
-    }
-}
 
 Class Cart{
+    public array $cart;
 
     public function generate_article_with_product_existing($product_name, $product_size, $product_quantity):Article{
         $product_to_check_name = $product_name;

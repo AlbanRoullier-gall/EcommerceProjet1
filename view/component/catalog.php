@@ -38,7 +38,6 @@
                         <div class="text">
                             <h3><?php echo $products[$element]->name_category; ?></h3>
                             <p>Prix : <?php echo $products[$element]->price_product; ?>€/m²</p>
-                            <p>Prix : <?php echo number_format((($products[$element]->price_product)*$rate_updated), 2); ?>$/sq. m</p>
                         </div>
                         <i class="fa fa-plus" data-product-name="<?php echo $products[$element]->name_product; ?>"></i>
                     </div>

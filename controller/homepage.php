@@ -4,7 +4,8 @@ require('model/model_media/connection_database.php');
 require('libraries/JSON/sponsor.php');
 require('libraries/XML/currency.php');
 
-function homepage() {
+function homepage()
+{
 
   $products = (new CatalogProducts)::$poductsArray;
   $categories = (new CatalogCategories)::$categoriesArray;
@@ -28,7 +29,8 @@ function homepage() {
   require("view/homepageview.php");
 }
 
-function homepage_product_searched($input_search){
+function homepage_product_searched($input_search)
+{
   $products = (new CatalogProducts)::$poductsArray;
   $categories = (new CatalogCategories)::$categoriesArray;
   $projects = (new CatalogProjects)::$projectsArray;

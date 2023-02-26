@@ -20,7 +20,8 @@ function cart(){
 	require('view/cartview.php');
 }
 
-function delete_product_cart($name_product){
+function delete_product_cart($name_product)
+{
  
 	$product_to_delete = (new Cart())->product_to_delete($_SESSION['cart'],$name_product);
 	
